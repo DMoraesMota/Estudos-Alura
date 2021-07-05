@@ -1,0 +1,10 @@
+.banner__imagem {
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+    .banner__imagem {
+        width: 100vh;
+    }
+}
