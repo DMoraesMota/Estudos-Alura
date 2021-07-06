@@ -1,0 +1,32 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    /* Propriedade que diz como alinhar os filhos verticalmente */
+    align-items: center;
+    /* Propriedade que diz o que fazer com o espaço entre os filhos e como alinha-los */
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-right: 5%;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
