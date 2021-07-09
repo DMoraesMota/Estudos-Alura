@@ -1,24 +1,29 @@
 "use strict"
 
-const BotaoDeletarTarefa = () => {
+const deletarTarefa = (atualiza, id) => {
+
+    const index = id;
+
+    const tarefasCadastradas = JSON.parse(localStorage.getItem('tarefas')) || [];
+
+    tarefasCadastradas.splice(index, 1);
+
+    localStorage.setItem('tarefas', JSON.stringify(tarefasCadastradas));
+
+    atualiza();
+
+}
+
+const BotaoDeletarTarefa = (atualiza, id) => {
 
     const botaoDeletarTarefa = document.createElement('button');
 
     botaoDeletarTarefa.innerText = "Deletar";
     botaoDeletarTarefa.classList.add('delete-button');
-    botaoDeletarTarefa.addEventListener('click', deletarTarefa);
+    botaoDeletarTarefa.addEventListener('click', () => deletarTarefa(atualiza, id));
 
     return botaoDeletarTarefa;
 }
 
-const deletarTarefa = (evento) => {
-    const botaoDeletarTarefa = evento.target;
-
-    const tarefaDeletar = botaoDeletarTarefa.parentElement;
-
-    tarefaDeletar.remove();
-
-    console.log(tarefaDeletar);
-}
 
 export default BotaoDeletarTarefa;
