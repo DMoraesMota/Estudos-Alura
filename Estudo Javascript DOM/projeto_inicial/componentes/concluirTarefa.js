@@ -1,3 +1,5 @@
+"use strict"
+
 const BotaoConclui = () => {
 
     const botaoConclui = document.createElement('button');

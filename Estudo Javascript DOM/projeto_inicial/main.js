@@ -1,3 +1,5 @@
+"use strict"
+
 import BotaoConclui from "./componentes/concluirTarefa.js";
 import BotaoDeletarTarefa from "./componentes/deletaTarefa.js";
 

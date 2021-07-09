@@ -1,3 +1,5 @@
+"use strict"
+
 const BotaoDeletarTarefa = () => {
 
     const botaoDeletarTarefa = document.createElement('button');
